@@ -1,0 +1,32 @@
+<div class="container-fluid" >
+    <form role="form">
+        <div class="form-horizontal">
+            <div class ="row">
+                <div class="form-group col-sm-4">
+                </div>
+                <div class="form-group col-sm-5">
+                    <label class = "sr-only" for="name">Name</label>
+                    <input [(ngModel)]="user.name" class="form-control input-lg" id="name" placeholder="Username" >
+                </div>
+            </div>
+            <div class ="row">
+                <div class="form-group col-sm-4"></div>
+                <div class="form-group col-sm-5"> 
+                    <label class="sr-only" for="password">Password</label>  
+                    <input [(ngModel)]="user.password" type = "password" class="form-control input-lg" 
+                        id="password" placeholder="Password">
+                    <div id="error">{{errorMsg}}
+                    </div>
+                </div>
+                    
+            </div>
+            <div class="row">
+                <div class="form-group col-sm-4"></div>
+                <div class="form-group col-sm-4">  
+                    <button id="login" class = "btn btn-default btn-lg" (click)="login()">LogIn</button>
+                    
+                </div>
+            </div>
+        </div>    
+    </form>
+</div>

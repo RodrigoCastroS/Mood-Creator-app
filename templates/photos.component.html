@@ -1,0 +1,11 @@
+<div class= "blue">
+      <h2>Welcome!</h2>
+      <h3>Select a photo depending your mood today, we'll do the rest!</h3>
+            <div *ngFor="let img of images; let i = index"  (click)= "getPlaylist(img.searchTerms)">
+                  <div class="row">
+                        <div class="col-xs-12 col-md-12">
+                              <img id="photos" class = "img-responsive center-block img-rounded" src="{{img.url}}"/>
+                        </div>
+                  </div>
+            </div>
+</div>

@@ -1,0 +1,59 @@
+<div id="loginContainer" class="container">
+    <ul class="nav navbar-nav navbar-right">
+    <button id="logout" class="btn btn-sm btn-default" (click)="logout()" href="#">Log Out</button>
+    </ul>
+        <img class = "img-responsive center-block" src="../img/logo_mood_low.png" />
+
+        <router-outlet></router-outlet>
+
+        <div class="loading">
+            <h1>Loading...</h1>
+        </div>
+    <footer id="footer" class="container-fluid bg-4 text-center">
+        <p><span class="glyphicon glyphicon-info-sign"></span> Web App Made By <a data-toggle="modal" data-target=".bd-example-modal-lg">Lidia & Rodrigo</a></p>
+        <!-- Modal -->
+          <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="false">
+
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="container-fluid bd-example-row">
+                    <div class="row">
+                      <div class="col-md-4">
+                          <img src="../img/lidia.png" alt="lidia lamas img" class="img-rounded" width="230">
+                        </div>
+                      <div class="col-md-8">
+                        <h3>Lidia Lamas Pérez</h3>
+                        <h4>I'm a young web developer currently looking for a job to begin my career. I'm a responsible and analitic person with and open mind and great flexibility.
+                            I like to learn and constantly improve and I work well in a team.
+                        </h4>
+                        <a href="https://es.linkedin.com/in/lidia-lamas-perez-225737125/en" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
+                        <a href="mailto:lidia.lamas@gmail.com"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                    <div class="row">
+                      <div class="col-md-8">
+                        <h3>Rodrigo Castro Sastre</h3>
+                        <h4>
+                          Young creative that have worked overseas for more than 3 years, in areas sucha as marketing online and advertising.
+                          Nowadays is looking for new ways of collaboration in the creative industry as a Front-end developer.
+                        </h4>
+                        <a href="https://es.linkedin.com/in/rodrigocastrofrontend" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
+                        <a href="https://twitter.com/roi31" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
+                        <a href="mailto:roi31@hotmail.com"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
+
+                      </div>
+                      <div class="col-md-4 ">
+                        <img src="../img/rodrigo.jpg" alt="Rodrigo Castro img" class="img-rounded" width="230">
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              
+          
+      </footer>
+
+</div>
+
